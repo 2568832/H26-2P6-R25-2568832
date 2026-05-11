@@ -23,12 +23,13 @@ namespace Models
         public RefugeChats()
         {
            // TODO À compléter
+           ColChats = new List<Chat>();
 
         }
         public RefugeChats(List<Chat> pColChats)
         {
             // TODO À compléter
-
+            ColChats = pColChats;
         }
         //-----------------------------------------------------------------------------------
         /// <summary>
@@ -53,7 +54,7 @@ namespace Models
         public void Ajouter(Chat pChat)
         {
             // TODO À compléter
-
+            ColChats.Add(pChat);
         }
         /// <summary>
         /// Supprimer un chat à une position donnée de la liste
